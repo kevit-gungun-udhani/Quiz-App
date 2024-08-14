@@ -1,12 +1,19 @@
-import { Outlet } from 'react-router-dom'
 import './App.css'
 import FormPage from './pages/Form'
-function App() {
+import HomePage from './pages/Home';
+import { Routes, Route, Navigate } from "react-router-dom";
+import ErrorPage from './pages/Error';
+import { useSelector } from 'react-redux';
 
+function App() {
+  const isUserAuthenticated = useSelector((state) => {return state.user.user});
+  
   return (
     <>
-      <Outlet/>
-      <FormPage/>
+      <Routes>
+        <Route path="/" element={<FormPage/>} errorElement={<ErrorPage/>}/>
+        <Route path="quiz" element={isUserAuthenticated ? <HomePage/> : <Navigate replace to='/'/>}/>
+      </Routes>
     </>
   )
 }
