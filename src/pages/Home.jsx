@@ -20,7 +20,7 @@ export default function HomePage() {
     return (
       <>
         <h1>Welcome {userName}!</h1>
-        <ShowQuiz totalQuestion={totalQuestion}/>
+        <ShowQuiz totalQuestion={totalQuestion} userSelectedLang={userSelectedLang}/>
       </>
     );
 }

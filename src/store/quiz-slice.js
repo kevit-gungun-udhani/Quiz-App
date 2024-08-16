@@ -6,8 +6,9 @@ const quizSlice = createSlice({
     currentQuestion: {
       id: '',
       que: '',
-      ans: []
+      ans: [],
     },
+    
   },
   reducers: {
     setCurrentQuestion(state, action) {

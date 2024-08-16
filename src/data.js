@@ -21,7 +21,7 @@ const data = {
           ans: 'A library used for building mobile applications only.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'A library to build user interfaces with help of declarative code.',
     },
     {
       id: 2,
@@ -44,7 +44,7 @@ const data = {
           ans: 'Part of the Redux library for managing global state.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'Creating responsive layouts in React applications.',
     },
     {
       id: 3,
@@ -67,7 +67,7 @@ const data = {
           ans: 'A tool for making HTTP requests in a React application.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'A specific HTML version that was explicitly created for React.',
     },
     {
       id: 4,
@@ -90,7 +90,7 @@ const data = {
           ans: 'By using the "new" keyword followed by the component name.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'By using the "new" keyword followed by the component name.',
     },
     {
       id: 5,
@@ -113,7 +113,7 @@ const data = {
           ans: 'A library for managing global state in React applications.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'The overall status of a React application, including all props and components.',
     },
   ],
   java: [
@@ -138,7 +138,7 @@ const data = {
           ans: 'It specifies the main configuration settings for a Java application.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It is used to handle exceptions in the program.',
     },
     {
       id: 2,
@@ -161,7 +161,7 @@ const data = {
           ans: 'It marks the variable as deprecated in future versions of the software.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It allows the variable to be modified only within the same class.',
     },
     {
       id: 3,
@@ -184,7 +184,7 @@ const data = {
           ans: 'It specifies the location of the error log files.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It contains code that might throw an exception and needs to be monitored.',
     },
     {
       id: 4,
@@ -207,7 +207,7 @@ const data = {
           ans: 'The class is intended for internal use only.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'The class is intended for internal use only.',
     },
     {
       id: 5,
@@ -230,7 +230,7 @@ const data = {
           ans: 'It clones the object to create a copy.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It clones the object to create a copy.',
     },
   ],
   c: [
@@ -255,7 +255,7 @@ const data = {
           ans: 'It manages memory allocation for dynamic data.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It manages memory allocation for dynamic data.',
     },
     {
       id: 2,
@@ -278,7 +278,7 @@ const data = {
           ans: 'The variable can be used to dynamically allocate memory.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'The variable can be used to dynamically allocate memory.',
     },
     {
       id: 3,
@@ -301,7 +301,7 @@ const data = {
           ans: 'It increments the value of a variable by one.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It increments the value of a variable by one.',
     },
     {
       id: 4,
@@ -324,7 +324,7 @@ const data = {
           ans: 'It prints the functions result to the standard output.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It prints the functions result to the standard output.',
     },
     {
       id: 5,
@@ -347,7 +347,7 @@ const data = {
           ans: 'It prints the size of a memory block to the standard output.',
         },
       ],
-      correctAnswer: 2,
+      correctAnswer: 'It prints the size of a memory block to the standard output.',
     },
   ],
 };
