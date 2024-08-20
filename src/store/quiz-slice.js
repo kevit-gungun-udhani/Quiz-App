@@ -3,21 +3,14 @@ import { createSlice } from "@reduxjs/toolkit";
 const quizSlice = createSlice({
   name: "quiz",
   initialState: {
-    currentQuestion: {
-      id: '',
-      que: '',
-      ans: [],
-    },
-    
+    answers: {}
   },
   reducers: {
-    setCurrentQuestion(state, action) {
-      state.currentQuestion.id = action.payload.id;
-      state.currentQuestion.que = action.payload.que;
-      state.currentQuestion.ans = action.payload.ans;
+    setAnswer(state, action) {
+      state.answers[action.payload.questionId] = action.payload.answer;
     }
   }
 })
 
 export default quizSlice.reducer;
-export const quizAction = quizSlice.actions;
+export const {setAnswer} = quizSlice.actions;
