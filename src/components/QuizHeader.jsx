@@ -6,6 +6,7 @@ const QuizHeader = () => {
   const { fullName, language } = useSelector(({ user }) => user.userInfo ?? {})
   const totalQuestions = data[language]?.length ?? 0;
   const {id: currentQuestion} = useParams();
+  
   return (
     <div>
       <div>{fullName}</div>

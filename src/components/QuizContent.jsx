@@ -11,6 +11,7 @@ export default function QuizContent() {
   const currentQuestion = +id;
   const question = data[language].find((ele) => ele.id === currentQuestion);
   const answer = answers[question?.id];
+  
   return (
     <div>
       <h3>{question?.text}</h3>
