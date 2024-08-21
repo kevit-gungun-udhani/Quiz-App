@@ -104,9 +104,9 @@ const UserForm = () => {
           <option value="" disabled >
             Please select a language
           </option>
-          <option value="java">Java</option>
-          <option value="react">React</option>
-          <option value="c">C</option>
+          <option value="Java">Java</option>
+          <option value="React">React</option>
+          <option value="C">C</option>
         </select>
 
         <button type="submit" className={classes.submit}>

@@ -22,14 +22,15 @@ const QuizNavigation = () => {
     navigate('/report')
   }
   return (
-    <div>
+    <div className="grow flex justify-between p-10 m-10">
         <button disabled={currentQuestion <= 1}
         onClick={() => {
             handleNavigation(true)
-        }}>&lt;</button>
+        }} className=" self-end">back</button>
+        <br/>
         <button onClick={() => {
             isLastQuestion ? handleSubmit() : handleNavigation();
-        }}>{isLastQuestion ? 'Submit' : '>'}</button>
+        }} className=" self-end">{isLastQuestion ? 'Submit' : 'next'}</button>
     </div>
   )
 }

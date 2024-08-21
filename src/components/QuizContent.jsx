@@ -2,6 +2,7 @@ import { useDispatch, useSelector } from "react-redux";
 import data from "../data";
 import { useParams } from "react-router-dom";
 import { setAnswer } from "../store/quiz-slice";
+import { motion } from "framer-motion";
 
 export default function QuizContent() {
   const dispatch = useDispatch();
@@ -13,16 +14,19 @@ export default function QuizContent() {
   const answer = answers[question?.id];
   
   return (
-    <div>
-      <h3>{question?.text}</h3>
-      <div>
+    <div className=" flex justify-between font-">
+      <div className="self-center p-2 text-lg">{question?.text}</div>
+      <div className=" flex flex-col gap-6 absolute right-8 top-28">
         {question?.answers.map((ele) => (
-          <div key={ele.id}>
-            <input
+          <motion.div key={ele.id} className="flex gap-4 p-4 border-2 border-red-400 rounded-md">
+            <motion.input
+              whileHover={{scale: 1.5}}
+              whileTap={{scale: 0.9}}
+              className="accent-red-500"
               type="radio"
               name="option"
               checked={answer === ele.ans}
-              onChange={() => {
+              onChange={() => { 
                 dispatch(
                   setAnswer({
                     questionId: question.id,
@@ -32,7 +36,7 @@ export default function QuizContent() {
               }}
             />
             <label>{ele.ans}</label>
-          </div>
+          </motion.div>
         ))}
       </div>
     </div>

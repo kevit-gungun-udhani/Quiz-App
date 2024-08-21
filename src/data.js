@@ -1,5 +1,5 @@
 const data = {
-  react: [
+  React: [
     {
       id: 1,
       text: 'Which of the following definitions best describes React.js?',
@@ -116,7 +116,7 @@ const data = {
       correctAnswer: 'The overall status of a React application, including all props and components.',
     },
   ],
-  java: [
+  Java: [
     {
       id: 1,
       text: 'What is the primary purpose of the public static void main(String[] args) method in Java?',
@@ -233,7 +233,7 @@ const data = {
       correctAnswer: 'It clones the object to create a copy.',
     },
   ],
-  c: [
+  C: [
     {
       id: 1,
       text: 'What is the purpose of the main function in a C program?',
