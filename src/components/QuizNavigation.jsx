@@ -9,6 +9,7 @@ const QuizNavigation = () => {
   const currentQuestion = +id;
   const totalQuestions = data[language]?.length ?? 0;
   const isLastQuestion = currentQuestion === totalQuestions;
+  const buttonCss =  'self-end bg-red-500 text-white drop-shadow-lg p-2 w-24 font-medium'
 
   function handleNavigation(isPrev = false){
     if(isPrev){
@@ -26,13 +27,13 @@ const QuizNavigation = () => {
         <button disabled={currentQuestion <= 1}
         onClick={() => {
             handleNavigation(true)
-        }} className=" self-end">back</button>
+        }} className={buttonCss}>Back</button>
         <br/>
         <button onClick={() => {
             isLastQuestion ? handleSubmit() : handleNavigation();
-        }} className=" self-end">{isLastQuestion ? 'Submit' : 'next'}</button>
+        }} className={buttonCss}>{isLastQuestion ? 'Submit' : 'Next'}</button>
     </div>
-  )
+  ) 
 }
 
 export default QuizNavigation

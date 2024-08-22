@@ -17,7 +17,6 @@ export default function Report(){
     const totalQuestions = data[language]?.length ?? 0;
     const summary = questions.map((ele) => {
         if(ele.correctAnswer === answers[ele.id]){
-            
             return ({
                 que: ele.text,
                 ans: ele.correctAnswer
